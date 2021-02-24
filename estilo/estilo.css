@@ -1,0 +1,433 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    margin: 2rem;
+    padding: 1rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Amatic SC";
+    background-color: #fef6eb;
+    font-weight: 400;
+    width: 100%;
+}
+
+#contenedor {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.animate__animated .animate__fadeIn {
+    --animate-duration: 8s;
+}
+
+header div img {
+    width: 30rem;
+    height: 30rem;
+}
+
+#navbar {
+    margin: 2rem 2rem 2rem 2rem;
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    background: linear-gradient(to right, #fef6eb 0%, #fef6eb 8%, #cb38dc 33%, #8e20b3 50%, #cb38dc 74%, #fef6eb 93%, #fef6eb 100%);
+}
+
+#listaNav {
+    padding: 1rem;
+    margin: 0rem;
+}
+
+#navbar #listaNav li {
+    list-style: none;
+    font-size: 2.3rem;
+    display: inline-flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+#navbar #listaNav li :hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+#navbar #listaNav li a {
+    padding: 0rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: #851aa6;
+    font-size: 5.5rem;
+}
+
+h2 {
+    color: #851aa6;
+    text-align: center;
+    font-size: 4.5rem;
+    margin: 1rem;
+}
+
+h3 {
+    color: #851aa6;
+    text-align: left;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    margin: inherit;
+    display: flex;
+}
+
+#textosInicio {
+    color: #851aa6;
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    padding: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+}
+
+#direccion {
+    text-align: center;
+    color: #851aa6;
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.h2Margin {
+    margin: 5rem;
+}
+
+.carousel-inner img {
+    max-height: 50rem;
+    max-width: 60rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "card card card";
+    justify-items: center;
+}
+
+#gridContainer #card {
+    font-size: 2rem;
+    color: #851aa6;
+    background-color: white;
+    box-shadow: 1px 1px 12px #851aa6;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+#gridContainer #card p {
+    padding: 0rem 1rem;
+}
+
+#gridContainer div p {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#gridContainer div ul {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+hr {
+    border: 0.1rem solid #851aa6;
+}
+
+.cardIngredientes {
+    list-style: none;
+    text-align: left;
+    padding: 0rem 1.5rem;
+}
+
+.cardBeneficios {
+    color: white;
+    background-color: #851aa6;
+    list-style: none;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+#divDatos {
+    display: inline-flex;
+    flex-flow: row;
+    margin: 5rem 0rem;
+}
+
+#divForm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#mainTarot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#formulario {
+    color: #851aa6;
+    font-size: 2rem;
+    border: solid #851aa6 0.2rem;
+    border-radius: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 2rem;
+    padding: 2rem;
+    display: inline-block;
+}
+
+.formularioInput {
+    border: solid #851aa6 0.2rem;
+}
+
+.formularioSubmit {
+    color: white;
+    background-color: #851aa6;
+    font-family: "Amatic SC";
+}
+
+#comentario {
+    color: #851aa6;
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 7rem;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#divTarot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 5rem 0rem;
+}
+
+#imgFixed {
+    background-image: url("../imagenes/tarottest.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+}
+
+.titulosTarot {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 3rem;
+    background-color: #851aa6;
+    width: fit-content;
+}
+
+.textosTarot {
+    margin: 2rem;
+    padding: 1rem;
+    color: #851aa6;
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+#triggerModal {
+    font-size: 2rem;
+    background-color: #851aa6;
+}
+
+.modal-header {
+    color: white;
+    background-color: #851aa6;
+}
+
+.modal-title {
+    font-size: 3rem;
+    color: white;
+}
+
+.modal-body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.modal-footer a {
+    font-size: 2rem;
+    color: white;
+    background-color: #851aa6;
+}
+
+#derechosReservados {
+    color: #ea71ff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#listaTarot {
+    color: #851aa6;
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 2rem;
+    align-items: baseline;
+    text-align: center;
+    border: solid #851aa6 0.2rem;
+    border-radius: 1rem;
+}
+
+footer .redes {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+footer .redes a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #851aa6;
+}
+
+footer .secciones {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+footer .secciones a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #851aa6;
+}
+
+@media screen and (max-width: 622px) {
+    ul li {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    ul li a {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    #textosInicio {
+        font-size: 1.8rem;
+    }
+    #gridContainer #card p {
+        font-size: 1.5rem;
+    }
+    #gridContainer p {
+        font-size: 1.5rem;
+    }
+    #direccion {
+        font-size: 1.8rem;
+    }
+    #comentario {
+        font-size: 1.8rem;
+    }
+    .titulosTarot {
+        font-size: 2.3rem;
+    }
+    #formulario {
+        color: #851aa6;
+        font-size: 1.2rem;
+        border: solid #851aa6 0.1rem;
+        border-radius: 0.5rem;
+        font-family: "Josefin Sans", sans-serif;
+        margin: 1rem;
+        padding: 0.5rem;
+        width: fit-content;
+        align-content: center;
+    }
+    .formularioInput {
+        border: solid #851aa6 0.1rem;
+    }
+    .formularioSubmit {
+        color: white;
+        background-color: #851aa6;
+        font-family: "Amatic SC";
+    }
+    .textosTarot {
+        font-size: 1.8rem;
+    }
+    .secciones {
+        width: 80%;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.8rem;
+    }
+    .redes {
+        width: 10%;
+        font-size: 1.8rem;
+    }
+    #divDatos {
+        flex-flow: column;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        margin: 0rem;
+        padding: 0rem;
+    }
+    #gridContainer {
+        display: initial;
+    }
+    #gridContainer #card {
+        margin: 2rem 3rem;
+        padding: 1rem 0rem;
+    }
+    #divForm {
+        margin-bottom: 3rem;
+    }
+}
