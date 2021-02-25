@@ -47,9 +47,12 @@ function crearElemento(dato) {
                         <li>Beneficios</li>
                         <br>
                         <li>${dato.beneficiosProducto}</li>
+                        <br>
+                        <li >Precio</li>
+                        <li class="precio" >${dato.precioProducto}</li>
                     </ul>
                    <br>
-                    <button class="triggerModal" id="${dato.id}">COMPRAR</button>`;
+                    <button class="formularioSubmit agregar-carrito" id="${dato.id}">Comprar</button>`;
     padre.appendChild(card);
     let boton = document.getElementById(dato.id);
     boton.onclick = () => {
