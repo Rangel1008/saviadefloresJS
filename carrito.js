@@ -27,6 +27,7 @@ class Carrito {
             </td>
         `;
         listaProductos.appendChild(row);
+        this.guardarLSProd(prod);
     }
 
     eliminarProducto(e) {
@@ -37,6 +38,7 @@ class Carrito {
             prod = e.target.parentElement.parentElement;
             prodID = prod.querySelector('a').getAttribute('id')
         }
+        this.eliminarLSProd(prodID);
     }
 
     vaciarCarrito(e) {
@@ -46,4 +48,36 @@ class Carrito {
         }
         return false;
     }
+
+    guardarLSProd(prod) {
+        let prod1;
+        prod1 = this.obtenerProdLS();
+        prod1.push(prod);
+        localStorage.setItem('prod1', JSON.stringify(prod1));
+    }
+
+    obtenerProdLS() {
+        let prodLS;
+
+        if (localStorage.getItem('prod1') === null) {
+            prodLS = [];
+        } else {
+            prodLS = JSON.parse(localStorage.getItem('prod1'));
+        }
+        return prodLS;
+    }
+
+    eliminarLSProd(prodID) {
+        let productoLS1;
+        productoLS1 = this.obtenerProdLS();
+
+        productoLS1.forEach(function(prodLS, index) {
+            if (prodLS.id === prodID) {
+                productoLS1.splice(index, 1);
+            }
+        });
+
+        localStorage.setItem('prod1', JSON.stringify(productoLS1));
+    }
+
 }

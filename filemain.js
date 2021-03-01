@@ -31,7 +31,10 @@ let padre = document.getElementById("gridContainer");
 
 for (let dato of catalogo) {
     crearElemento(dato);
-}
+};
+
+
+
 
 function crearElemento(dato) {
     let card = document.createElement("div");
