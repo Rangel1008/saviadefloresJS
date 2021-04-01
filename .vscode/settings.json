@@ -1,0 +1,5 @@
+{
+    "turboConsoleLog.includeFileNameAndLineNum": false,
+    "turboConsoleLog.insertEnclosingFunction": false,
+    "turboConsoleLog.insertEnclosingClass": false
+}
