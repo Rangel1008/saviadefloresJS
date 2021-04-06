@@ -58,24 +58,6 @@ header div img {
     text-align: center;
 }
 
-
-/* #navbar #listaNav li :hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-} */
-
-#carrito {
-    background-color: #851aa6;
-}
-
-#lista-carrito {
-    font-size: 1.5rem;
-    font-family: "Josefin Sans", sans-serif;
-    padding: 0rem 1rem;
-    color: white;
-    text-decoration: none;
-}
-
 #navbar #listaNav li a {
     padding: 0rem 1rem;
     color: white;
@@ -328,6 +310,16 @@ hr {
     word-spacing: 0.2rem;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
+}
+
+.titulosCarrito {
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    background-color: #851aa6;
+    width: fit-content;
 }
 
 footer {

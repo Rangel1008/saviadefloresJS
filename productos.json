@@ -3,20 +3,42 @@
         "nombreProducto": "Blend matero",
         "ingProducto": "Cedron - Manzanilla - Cáscaras de naranja",
         "beneficiosProducto": "Mejora la digestión - Desinflama zona estomacal - Regulariza el chakra",
-        "precioProducto": "AR$100"
+        "precioProducto": "AR$155"
     },
     {
         "id": "2",
         "nombreProducto": "Ramillete sahumador de manzanilla",
         "ingProducto": "Manzanilla secada hecha ramilletes (Artesanal)",
         "beneficiosProducto": "Armoniza ambientes - Prosperidad del hogar - Repele malas energías",
-        "precioProducto": "AR$150"
+        "precioProducto": "AR$200"
     },
     {
         "id": "3",
         "nombreProducto": "Blend de rosas (base de te rojo)",
         "ingProducto": "Salvia blanca - Pétalos de Rosa - Chocolate",
         "beneficiosProducto": "Amor propio - Alineamiento del chakra del corazon - Armonia",
-        "precioProducto": "AR$200"
+        "precioProducto": "AR$350"
+    },
+    {
+        "id": "4",
+        "nombreProducto": "Aceite para masajes",
+        "ingProducto": "Aceite de jojoba - Aceite de almendras dulces - Incienso",
+        "beneficiosProducto": "Afrodisíaco - Pasional - Relajante - Natural",
+        "precioProducto": "AR$590"
+    },
+    {
+        "id": "5",
+        "nombreProducto": "Shampoo sólido 90gr",
+        "ingProducto": "Karite - Calendula - Petigrain - Lavanda - Geranio",
+        "beneficiosProducto": "Para diferentes tipos de pelo",
+        "precioProducto": "AR$450"
+    },
+    {
+        "id": "6",
+        "nombreProducto": "Sales de baños naturales",
+        "ingProducto": "Rosas - Lavanda - Menta",
+        "beneficiosProducto": "Relajacion muscular - Descongestion",
+        "precioProducto": "AR$270"
     }
+
 ]
